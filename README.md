@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Library UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed for education purposes. Feel free to use :)
 
-## Available Scripts
+## 🚀 Start using it
 
 In the project directory, you can run:
+
+### `yarn`
+
+Downloads all dependencies.\
 
 ### `yarn start`
 
@@ -39,32 +43,48 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 🧬 Template structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is the structure of the files in the template:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```sh
+    │
+    ├── public                  # public files (favicon, .htaccess, manifest, ...)
+    ├── src                     # source files
+    │   ├── components
+    │   ├── pages
+    │   ├── resources           # images, constants and other static resources
+    │   ├── styles
+    │   ├── tests               # all test files
+    │   ├── utility             # utilities functions and custom components
+    │   ├── App.js
+    │   ├── index.js
+    │   ├── reportWebVitals.js
+    │   └── setupTests.ts
+    ├── .gitignore
+    ├── package.json
+    ├── README.md
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Deploy it to S3. 
 
-### `yarn build` fails to minify
+## ⚗️ Technologies list
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
+- [Moment](https://momentjs.com/)
+
+<br />
+
+# ⚠️ Warning
+
+Cloning this repo makes you better developer. Be careful!
+
+# 📖 Learn More
+
+- [My website: ](https://emrecan.co/) – Contact with me!
+- [My Youtube channel](https://www.youtube.com/channel/UCHnhd6yOwxKyQTZU1yDqV0w) – Sharing my experience in whole my career.
