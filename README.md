@@ -47,7 +47,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # 🧬 Template structure
 
-This is the structure of the files in the template: test
+This is the structure of the files in the template: test2
 
 ```sh
     │
