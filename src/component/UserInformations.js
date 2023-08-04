@@ -1,18 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form, Input, Button } from 'antd';
 import { informationFormStyle } from '../styles/style';
 
 
-const UserInformations = () => {
+const UserInformations = ({ user }) => {
+    useEffect(() => {
+
+    }, [user])
     const onFinish = (values) => {
         console.log('Form values:', values); // You can handle form submission here
+        // TODO
     };
 
     return (
-        <Form style={informationFormStyle} onFinish={onFinish}>
+        <Form
+            style={informationFormStyle}
+            onFinish={onFinish}
+            initialValues={{
+                fullName: user.fullName,
+                username: user.username,
+                email: user.email,
+            }}
+
+        >
             <Form.Item
                 label="Full Name"
                 name="fullName"
+                rules={[{ required: true, message: 'Please input your full name!' }]}
+            >
+                <Input />
+            </Form.Item>
+
+            <Form.Item
+                label="User Name"
+                name="username"
                 rules={[{ required: true, message: 'Please input your full name!' }]}
             >
                 <Input />

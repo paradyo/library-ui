@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { menuStyle } from '../styles/style';
 import { Menu } from 'antd';
+import { AuthContext } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
     const [current, setCurrent] = useState('mail');
+    const { logout, isAuthenticated } = useContext(AuthContext)
+    const navigate = useNavigate()
     const onClick = (e) => {
-        console.log('click ', e);
         setCurrent(e.key);
+        if (e.key == 'logout') {
+            logout()
+            navigate('/login')
+        }
     };
     const items = [
         {
@@ -18,6 +25,7 @@ const Navigation = () => {
             ),
             key: 'home',
             icon: <AppstoreOutlined />,
+            show: true,
         },
         {
             label: (
@@ -27,6 +35,7 @@ const Navigation = () => {
             ),
             key: 'profile',
             icon: <AppstoreOutlined />,
+            show: isAuthenticated,
         },
         {
             label: (
@@ -36,6 +45,7 @@ const Navigation = () => {
             ),
             key: 'login',
             icon: <AppstoreOutlined />,
+            show: !isAuthenticated,
         },
         {
             label: (
@@ -45,9 +55,22 @@ const Navigation = () => {
             ),
             key: 'register',
             icon: <AppstoreOutlined />,
+            show: !isAuthenticated,
+        },
+        {
+            label: 'Logout',
+            key: 'logout',
+            icon: <AppstoreOutlined />,
+            show: isAuthenticated,
         },
     ];
-    return <Menu onClick={onClick} style={menuStyle} selectedKeys={[current]} mode="horizontal" items={items} />;
+    return <Menu
+        onClick={onClick}
+        style={menuStyle}
+        selectedKeys={[current]}
+        mode="horizontal"
+        items={items.filter((item) => item.show)}
+    />;
 };
 
 export default Navigation;

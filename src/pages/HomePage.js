@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import HomeBooks from '../component/HomeBooks';
 import { Pagination, Empty, Input } from 'antd';
-import { paginationStyle, emptyDataStyle } from '../styles/style';
+import { paginationStyle, emptyDataStyle, searchInputStyle } from '../styles/style';
 import ApiBase from '../utilities/api/ApiBase';
 import { links } from '../utilities/api/links';
 import { alerts } from '../utilities/AlertTypes';
 import AlertTemplate from '../component/AlertTemplate';
-import { searchInputStyle } from '../styles/style';
 const { Search } = Input;
 
 const HomePage = () => {
