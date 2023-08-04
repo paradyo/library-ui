@@ -19,7 +19,7 @@ const App = () => {
 				<Route path="/login" element={<PageLayout><LoginPage /></PageLayout>} />
 				<Route path="/register" element={<PageLayout><RegisterPage /></PageLayout>} />
 				<Route path="/profile" element={<PageLayout><UserProfile /></PageLayout>} />
-				<Route path="/:bookName" element={<PageLayout><BookPage /></PageLayout>} />
+				<Route path="/:bookUrl" element={<PageLayout><BookPage /></PageLayout>} />
 			</Routes>
 		</BrowserRouter>
 	);

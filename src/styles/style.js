@@ -16,7 +16,6 @@ const headerStyle = {
 };
 const homeBookRowStyle = {
     display: 'flex',
-    justifyContent: 'center',
     marginBottom: 20
 };
 const homeBookDivStyle = {
@@ -54,6 +53,12 @@ const dataTableStyle = {
     paddingLeft: '5%',
     paddingRight: '5%'
 };
+const emptyDataStyle = {
+    marginTop: '5%',
+};
+const searchInputStyle = {
+    width: 200,
+}
 export {
     contentStyle,
     footerStyle,
@@ -66,5 +71,7 @@ export {
     registerFormStyle,
     menuStyle,
     informationFormStyle,
-    dataTableStyle
+    dataTableStyle,
+    emptyDataStyle,
+    searchInputStyle
 };

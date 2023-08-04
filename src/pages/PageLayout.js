@@ -11,7 +11,7 @@ const PageLayout = ({ children }) => {
 			<Content style={contentStyle}>
 				{children}
 			</Content>
-			<Footer style={footerStyle}>Library UI - <a href='emrecan.co' style={ahrefLinkFooter} target='_blank'>emrecan.co</a></Footer>
+			<Footer style={footerStyle}>Library UI - <a href='https://emrecan.co' style={ahrefLinkFooter} target='_blank'>emrecan.co</a></Footer>
 		</Layout>
 	);
 };

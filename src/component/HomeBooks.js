@@ -3,30 +3,22 @@ import { Card, Col, Row } from 'antd';
 import BookCard from '../component/BookCard';
 import { homeBookRowStyle, homeBookDivStyle } from '../styles/style';
 const { Meta } = Card;
-const HomeBooks = () => (
-    <div style={homeBookDivStyle}>
-        <Row gutter={[24, 24]} style={homeBookRowStyle}>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-        </Row>
-        <Row gutter={[16, 16]} style={homeBookRowStyle}>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-            <Col xs={24} sm={24} md={12}>
-                <BookCard />
-            </Col>
-        </Row>
-    </div>
-);
+const HomeBooks = ({ books }) => {
+    return (
+        <div style={homeBookDivStyle}>
+            <Row style={homeBookRowStyle}>
+                {books.map((book) => (
+                    <Col key={book.id} xs={24} sm={24} md={12}>
+                        <BookCard
+                            title={book.name}
+                            author={book.author}
+                            image_s3_id={book.image_s3_id}
+                        // Add more props here as needed
+                        />
+                    </Col>
+                ))}
+            </Row>
+        </div>
+    )
+};
 export default HomeBooks;
