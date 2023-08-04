@@ -2,6 +2,12 @@
 
 This project was developed for education purposes. Feel free to use :)
 
+## Screenshots from the UI
+
+Its in the development process.
+
+![homepage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+
 ## 🚀 Start using it
 
 In the project directory, you can run:
