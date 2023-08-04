@@ -54,6 +54,7 @@ This is the structure of the files in the template: test3
     ├── public                  # public files (favicon, .htaccess, manifest, ...)
     ├── src                     # source files
     │   ├── components
+    │   ├── context
     │   ├── pages
     │   ├── resources           # images, constants and other static resources
     │   ├── styles
@@ -70,13 +71,13 @@ This is the structure of the files in the template: test3
 
 ### Deployment
 
-Deploy it to S3. 
+Deploy it to S3 bucket.
 
 ## ⚗️ Technologies list
 
-- [Router](https://reactrouter.com/)
-- [Axios](https://axios-http.com/)
-- [Moment](https://momentjs.com/)
+-   [Router](https://reactrouter.com/)
+-   [Axios](https://axios-http.com/)
+-   [Moment](https://momentjs.com/)
 
 <br />
 
@@ -86,5 +87,5 @@ Cloning this repo makes you better developer. Be careful!
 
 # 📖 Learn More
 
-- [My website: ](https://emrecan.co/) – Contact with me!
-- [My Youtube channel](https://www.youtube.com/channel/UCHnhd6yOwxKyQTZU1yDqV0w) – Sharing my experience in whole my career.
+-   [My website: ](https://emrecan.co/) – Contact with me!
+-   [My Youtube channel](https://www.youtube.com/channel/UCHnhd6yOwxKyQTZU1yDqV0w) – Sharing my experience in whole my career.
