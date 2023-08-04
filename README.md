@@ -6,7 +6,11 @@ This project was developed for education purposes. Feel free to use :)
 
 Its in the development process.
 
-![homepage](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![homepage](https://github.com/paradyo/library-ui/blob/main/src/resources/readme_photos/homepage.png)
+![bookpage](https://github.com/paradyo/library-ui/blob/main/src/resources/readme_photos/bookpage.png)
+![loginpage](https://github.com/paradyo/library-ui/blob/main/src/resources/readme_photos/loginpage.png)
+![registerpage](https://github.com/paradyo/library-ui/blob/main/src/resources/readme_photos/registerpage.png)
+![profilepage](https://github.com/paradyo/library-ui/blob/main/src/resources/readme_photos/profilepage.png)
 
 ## 🚀 Start using it
 
