@@ -1,4 +1,4 @@
-# Library UI
+# 🤠 Library UI 🤠
 
 This project was developed for education purposes. Feel free to use :)
 
@@ -74,7 +74,7 @@ Its in the development process.
 
 ## Deployment
 
-Deploy it to S3 bucket.
+Deploy it to S3 bucket the build folder.
 
 ## 📖 TODO
 
